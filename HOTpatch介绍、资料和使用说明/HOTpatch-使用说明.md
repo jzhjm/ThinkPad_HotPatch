@@ -1,22 +1,23 @@
-### HOTpatch使用方法 ###
+# HOTpatch使用方法 #
 
 一、设置bios
 
    充分了解你的机器配置，正确设置bios,建议按图示设置。
-   
+
 二、使用方法
 
-1 修改配置文件
-  根据你的具体情况修改SSDT-config*.aml文件。如：你的屏幕是1300X768，修改HIGH=0；如果你是T430，
+1. 修改配置文件
+
+  根据你的具体情况修改SSDT-config*.aml文件。如：你的屏幕是1366X768，修改HIGH=0；如果你是T430，
 则修改MODE=30.详见SSDT-Config配置说明。
 
-2 简单使用方法
+2. 简单使用方法
 
   下载包括HOTpatch的EFI文件包并完整替换你的ESP分区的EFI，注意是完整替换。
   这种方法通用，但是不一定适用你。比如，网卡、显卡、屏幕可能不同。注意保存好你原先的EFI，做好
 恢复EFI的准备。
 
-3 正常使用方法
+3. 正常使用方法
 
 1⃣️ 删除EFI\clover\ACPI\patched\所有文件，把“HOTpatch文件更新区”有关SSDT-xxx*.aml文件
    （适合你的）拷贝到该目录。
@@ -36,5 +37,3 @@
 和正确的驱动。在EFI\clover\Kexts\Other\里应当有必要的驱动，请到下载你需要的驱动。
 
 通用性驱动请到官网下载：https://bitbucket.org/RehabMan/
-
-
