@@ -9,7 +9,8 @@
 1. 修改配置文件
 
   根据你的具体情况修改SSDT-config*.aml文件。如：你的屏幕是1366X768，修改HIGH=0；如果你是T430，
-则修改MODE=30.详见SSDT-Config配置说明。
+则修改MODE=30\
+详见[SSDT-Config配置说明](https://raw.githubusercontent.com/jzhjm/ThinkPad_HotPatch/master/HOT3.2综合补丁包(2017–08-16)/SSDT-Config配置说明3.2.md/)。
 
 2. 简单使用方法
 
