@@ -28,7 +28,7 @@
 3. 如果我们对本机 ACPI 二进制文件更改得当，HOTpatch 可以在更新 BIOS 后仍然很好的工作，甚至可以跨平台工作，除了 BIOS 更新后，更改了我们要修改的那个数据。
 
 下图是 HOTpatch 和传统方法的对比:
-![image](http://note.youdao.com/favicon.ico)
+![image](https://raw.githubusercontent.com/jzhjm/ThinkPad_HotPatch/master/HOTpatch介绍、资料和使用说明/HOTpatch介绍.jpeg)
 
 
 ## 二、HOTpatch 优缺点
