@@ -62,7 +62,7 @@
 
 ### 四、SSDT-Config#32.aml配置文件：
 
-   SSDT-Config#32.aml的配置使用参见《[SSDT-Config配置说明3.2](https://raw.githubusercontent.com/jzhjm/ThinkPad_HotPatch/master/HOT3.2综合补丁包(2017–08-16)/SSDT-Config配置说明3.2.md/)》。
+   SSDT-Config#32.aml的配置使用参见《[SSDT-Config配置说明3.2](https://github.com/jzhjm/ThinkPad_HotPatch/blob/master/HOT3.2综合补丁包(2017–08-16)/SSDT-Config配置说明3.2.md)》。
 
 ### 五、config.plist配置文件
 
