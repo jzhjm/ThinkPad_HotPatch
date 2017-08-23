@@ -1,0 +1,23 @@
+IVY CPU仿冒Haswell、开启XCPM方法：
+========
+一、仿冒，开启XCPM（该过程可能无法进入系统，做好备份）
+
+config.plist里:
+1 机型设置为MacBookPro11,1或其他支持Haswell的机型。
+2 KernelToPatch处打二个补丁: 
+查找 83C3C483FB22 
+替换 83C3C683FB22
+查找 005DE9080000000F1F840000000000554889E541
+替换 005DE9080000000F1F840000000000C39089E541
+=========
+二、检测XCPM是否开启：
+终端敲入：
+sysctl -n machdep.xcpm.mode
+sysctl -n machdep.xcpm.vectors_loaded_count
+如果以上两条命令的日志输出均为 1 ，那么说明 XCPM 已经成功开启。
+=========
+注意：
+做好必要的备份后再尝试。
+=========
+
+
