@@ -1,4 +1,4 @@
-# ==HOTpatch 介绍==
+# HOTpatch 介绍
 
 ## 一、什么是HOTpatch？
 
