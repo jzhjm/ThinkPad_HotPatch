@@ -19,21 +19,17 @@
 
 3. 正常使用方法
 
-1⃣️ 删除EFI\clover\ACPI\patched\所有文件，把“HOTpatch文件更新区”有关SSDT-xxx*.aml文件
+    1. 删除EFI\clover\ACPI\patched\所有文件，把“HOTpatch文件更新区”有关SSDT-xxx*.aml文件
    （适合你的）拷贝到该目录。
 
-2⃣️ 删除原来的config文件，替换成“HOTpatch文件更新区”和你机器匹配的config.plist文件。并根据
-你自己的情况进一步修改config文件。
+    2. 删除原来的config文件，替换成“HOTpatch文件更新区”和你机器匹配的config.plist文件。并根据你自己的情况进一步修改config文件。
 
-3⃣️ 关于睿频和变频
-
+    3. 关于睿频和变频\
 自行决定使用下列方法之一：
 1 clover自动方式：勾选PS和CS；
 2 SSDT方式：不勾选PS和CS；正确提取你的SSDT.aml，放到EFI\clover\ACPI\patched\。
 
-4⃣️ 关于驱动
+    4. 关于驱动\
+  HOTpatch是补丁文件，用于说明你的机器有什么硬件和驱动硬件的方法，机器的正常工作还需要硬件的支持和正确的驱动。在EFI\clover\Kexts\Other\里应当有必要的驱动，请到下载你需要的驱动。
 
-  HOTpatch是补丁文件，用于说明你的机器有什么硬件和驱动硬件的方法，机器的正常工作还需要硬件的支持
-和正确的驱动。在EFI\clover\Kexts\Other\里应当有必要的驱动，请到下载你需要的驱动。
-
-通用性驱动请到官网下载：https://bitbucket.org/RehabMan/
+> 通用性驱动请到官网下载：https://bitbucket.org/RehabMan/
