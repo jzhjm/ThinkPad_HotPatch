@@ -1,4 +1,4 @@
-# ==HOTpatch 介绍==
+# HOTpatch 介绍
 
 ## 一、什么是HOTpatch？
 
@@ -29,7 +29,7 @@
 
 下图是 HOTpatch 和传统方法的对比:
 ![image](https://raw.githubusercontent.com/jzhjm/ThinkPad_HotPatch/master/HOTpatch介绍、资料和使用说明/HOTpatch介绍.jpeg)
-
+---
 
 ## 二、HOTpatch 优缺点
 
