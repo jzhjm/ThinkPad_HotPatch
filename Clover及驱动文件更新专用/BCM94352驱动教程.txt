@@ -1,0 +1,37 @@
+前两天看到群里有小伙伴在问BCM94352HMB网卡如何驱动，今天稍微整理了一下分享出来给大家！
+
+一、驱动
+1、WiFi部分：
+首先我们从https://bitbucket.org/RehabMan/os-x-fake-pci-id/downloads/下载最新版本的FakePCIID
+把FakePCIID.kext FakePCIID_Broadcom_WiFi.kext两个文件拷到Clover/kexts/对应的目录下。
+
+2、蓝牙部分：
+我们可以从https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/下载最新版本的BrcmPatchRAM
+同样我们把它们拷贝到Clover/kexts/对应的目录里。尽量不要去动SLE或者LE里的文件使用Clover加载就可以了。
+10.10 及以下系统安装BrcmPatchRAM.kext 一个即可。
+10.11及10.12需要安装BrcmPatchRAM2.kext 跟 BrcmFirmwareData.kext两个驱动文件。
+
+驱动文件只需要这些就可以了接下来我们需要对Clover进行打补丁才能驱动WiFi
+
+二、Clover补丁
+
+在10.12.X系统下必需打补丁    Name: AirPortBrcm4360 
+Find: 81F952AA00007529 
+Replace: 81F952AA00006690
+Comment: AirPortBrcm4360 - fcvo   以下三个补丁同样适用于BCM94360HMB如显示第三方补丁 加入以下的patch即可显示为：AirPort ExtremeName: AirPortBrcm4360 
+Find: 6B100000750D     
+Replace: 6B1000009090   
+Comment: AirPort Extreme
+如果国家地区不是US，无法连接5GHz 
+Name: AirPortBrcm4360 
+Find: 4183FCFF742C48   
+Replace: 66C7065553EB2B 
+Comment: 10.11-BCM94352-5GHz-US-FCC-dv
+
+如要开启Handoff 功能（支持10.11）要求硬件必须为蓝牙4.0 低功耗。
+Name: IOBluetoothFamily
+Find: 4885FF7447488B07  
+Replace: 41BE0F000000EB44
+Comment: 10.11 BT4LE Handoff Hotspot
+
+
